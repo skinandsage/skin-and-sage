@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skin and Sage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS -->
+</head>
+<body>
+  <header>
+    <h1>Skin and Sage</h1>
+    <p>your beauty guide, with a touch of magic ✨</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Top Picks</a>
+    <a href="#">Blog</a>
+    <a href="#">About</a>
+  </nav>
+
+  <section class="featured">
+    <h2>Top Picks</h2>
+    <div class="product-grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/250x150" alt="product 1">
+        <h3>Dewy Glow Serum</h3>
+        <p>Lightweight & hydrating—perfect for everyday radiance.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/250x150" alt="product 2">
+        <h3>Rosy Tint Balm</h3>
+        <p>Blush + balm in one. Long-lasting, ultra cute finish.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured">
+    <h2>From the Blog</h2>
+    <div class="blog-grid">
+      <div class="card">
+        <h3>5 Skincare Must-Haves</h3>
+        <p>Our ultimate beginner kit to glowing skin, linked to the best Amazon deals!</p>
+      </div>
+      <div class="card">
+        <h3>Budget Beauty That Works</h3>
+        <p>Don’t break the bank — check out these Pinterest-approved affordable finds.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Skin and Sage. Made with love ✿</p>
+  </footer>
+
+  <button id="scrollBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+</body>
+</html>

@@ -1,0 +1,141 @@
+:root {
+  --main-pink: #fcdde8;
+  --accent-pink: #f9c8d2;
+  --text-dark: #333;
+  --text-light: #777;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #fff5f8, #ffeef5);
+  color: var(--text-dark);
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #d96b87;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-light);
+  margin: 0 1rem;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #d96b87;
+  transition: width 0.3s;
+  margin-top: 5px;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.featured {
+  padding: 2rem;
+  text-align: center;
+}
+
+.featured h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #c45a7d;
+}
+
+.product-grid, .blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 2px solid var(--accent-pink);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #d96b87;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  padding: 2rem 1rem;
+}
+
+/* Sparkles */
+body::before {
+  content: '';
+  background: url('https://cdn.pixabay.com/photo/2020/12/28/11/16/stars-5864956_960_720.png') repeat;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Scroll to top */
+#scrollBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #f9c8d2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
